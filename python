@@ -1,0 +1,12 @@
+# 有四个数字：1、2、3、4，能组成多少个互不相同且无重复数字的三位数？各是多少？
+list = [1, 2, 3, 4]
+length = len(list)
+counter = 0
+for i in range(length):
+    for j in range(length):
+        for k in range(length):  # 随机从列表中抽取三个index
+            if list[i]!=list[j] and list[i]!=list[k] and list[j]!=list[k]:
+                num = list[i]*100 + list[j]*10 + list[k]
+                print(num)
+                counter = counter + 1 
+print('the total number is:', counter)
