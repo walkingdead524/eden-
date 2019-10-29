@@ -1,0 +1,10 @@
+#获取100以内的质数
+array = []
+for i in range(2,100):
+    for j in range(2,i):
+        if i%j == 0:
+            break          #跳出循环
+        
+    else:                  #for...else语句
+        array.append(i)
+print(array)
