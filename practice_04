@@ -1,0 +1,12 @@
+#输入三个整数x, y, z, 把三个数由大到小输出
+
+list = []                # 生成一个空列表
+a = input('input the first number:')
+list.append(int(a))
+b = input('input the second number:')
+list.append(int(b))
+c = input('input the third number:')
+list.append(int(c))
+list.sort()               # 对列表中元素进行升序排列
+list.reverse()            # 对升序排列后的元素进行反转
+print(list[0],list[1],list[2])
