@@ -12,3 +12,11 @@ for i in range(1, int(num)):                      # 先考虑如何生成一个�
 print(lst)
 num2 = input('需要输出第几个斐波那契数:')
 print(lst[int(num2)])
+
+
+# 另一种解题思路
+fib = [0, 1]
+num = input('how many Fibonacci numbers do you want:')
+for i in range(int(num)-2):
+    fib.append(fib[-1] + fib[-2])
+print(fib)
