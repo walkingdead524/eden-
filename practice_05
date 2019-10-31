@@ -1,0 +1,14 @@
+# 输出指定个数的斐波那契数列（Fibonacci sequence)
+lst = []
+list = [0, 1]
+num = input('需要生成多少以内的斐波那契数列：')
+for i in range(1, int(num)):                      # 先考虑如何生成一个斐波那契数列
+    for j in range(len(list)):  
+        list.append(i)
+        if i == list[j] + list[j+1]:   
+            lst = list.copy()
+        else: 
+            list.remove(i)         
+print(lst)
+num2 = input('需要输出第几个斐波那契数:')
+print(lst[int(num2)])
