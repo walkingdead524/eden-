@@ -1,0 +1,9 @@
+# 输出9*9乘法表 
+# 此练习可以巩固print命令的格式改变
+for i in range(1,10):       #第i列
+    print()
+    for j in range(1,i+1):   #第j行
+        a = i      
+        b = j      
+        c = j * i  # 计算乘法  
+        print("%d * %d = %d \t"%(b,a,c),end="")     #\t表示制表符， end=""表示打印结尾不换行，因为默认为\n换行
