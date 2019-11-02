@@ -20,3 +20,15 @@ num = input('how many Fibonacci numbers do you want:')
 for i in range(int(num)-2):
     fib.append(fib[-1] + fib[-2])
 print(fib)
+
+
+# 使用自定义函数形式
+def fib(n):
+    lst = [0,1]
+    for i in range(n):
+        if i == lst[-1] + lst[-2]:
+            lst.append(i)
+    return lst
+
+list1 = fib(100)
+print(list1)
