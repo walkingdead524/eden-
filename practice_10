@@ -1,0 +1,15 @@
+# 统计出输入中的字母，数字，空格及其他字符的数量
+# 主要熟悉isalpha/isdigit函数 
+a = input('input a string of word:')
+c = list(a)
+letter = space = digit = others = 0
+for i in c: 
+    if i.isalpha():
+        letter+=1
+    elif i.isdigit():
+        digit+=1
+    elif i ==' ':
+        space+=1
+    else: 
+        others+=1 
+print('字母数量：%d, 空格数量：%d, 数字数量：%d, 其他：%d'%(letter, space, digit,others))
